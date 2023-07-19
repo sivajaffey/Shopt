@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<mat-card>
+    <app-header [config]="config" />
+    <mat-progress-bar mode="indeterminate" *ngIf="progressbar"></mat-progress-bar>
+        <mat-card-content>
+            <router-outlet></router-outlet>
+        </mat-card-content>
+    <app-footer [config]="config" />
+</mat-card>

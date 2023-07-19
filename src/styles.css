@@ -4,7 +4,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 mat-card {
     height: 100%;
 }
-mat-card-header {
+app-header , mat-card-header {
     height: 8%;
     background-color: #EA9F33;
     color: #F1EAE0;
@@ -20,11 +20,18 @@ mat-card-content {
     padding: 2px;
     background-color: #F1EAE0;
 }
-mat-card-footer {
+app-footer , mat-card-footer {
     height: 5%;
     padding: 1%;
     background-color: black;
     color: #EA9F33;
     justify-items: center;
     text-align: right;
+}
+.error-404 {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 0;
 }

@@ -13,12 +13,20 @@ import {MatCardModule} from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import {MatIconModule} from '@angular/material/icon';
+import { ProductComponent } from './components/product/product.component';
+import { CommonService } from './services/common.service';
+import { HeaderComponent } from './components/layouts/header/header.component';
+import { FooterComponent } from './components/layouts/footer/footer.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
     AppComponent,
     FourOFourComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ProductComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -29,9 +37,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatButtonModule,
     MatSlideToggleModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressBarModule
   ],
-  providers: [],
+  providers: [CommonService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
