@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class HeaderComponent {
   @Input() config:any;
+  constructor(public common:CommonService){}
 }

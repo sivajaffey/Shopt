@@ -3,27 +3,46 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 mat-card {
     height: 100%;
+    position: fixed;
 }
-app-header , mat-card-header {
-    height: 8%;
+/* .mat-mdc-card-header {
+    display: contents !important;
+} */
+.mat-h1, .mat-headline-5, .mat-typography .mat-h1, .mat-typography .mat-headline-5, .mat-typography h1 {
+    margin: 2%;
+}
+app-header {
+    /* height: 8%; */
     background-color: #EA9F33;
     color: #F1EAE0;
     font-size:large;
     font-weight: bold;
     width: 100%;
 }
+mat-card-header .menu-button {
+    float: left;
+} 
 mat-card-header h1 {
     width: 95%;
+}
+mat-card-header button {
+    width: 5%;
+}
+mat-drawer-container {
+    position: fixed !important;
+    height: 88% !important;
+}
+.mat-drawer {
+    background: #F1EAE0 !important;
 }
 mat-card-content {
     height: 85%;
     padding: 2px;
     background-color: #F1EAE0;
 }
-app-footer , mat-card-footer {
+app-footer {
     height: 5%;
     padding: 1%;
-    background-color: black;
     color: #EA9F33;
     justify-items: center;
     text-align: right;
@@ -31,7 +50,11 @@ app-footer , mat-card-footer {
 .error-404 {
     width: 100%;
     height: 100%;
-    justify-content: center;
     text-align: center;
-    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.error-msg {
+    color: red;
 }

@@ -6,11 +6,15 @@ import { Injectable, Output, EventEmitter } from '@angular/core';
 export class CommonService {
 
   constructor() { }
+  showFiller = false;
   config = {
     title: 'ShopT',
     footer: 'Fake Shop Version 1.0.0',
     page: ''
   };
+  drawer(drawer:any) {
+    drawer.toggle()
+  }
   // setContents(data:any, router:any) {
   //   if (data && data.url) {
   //     let url = data.url.split('/');

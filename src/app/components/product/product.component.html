@@ -1,0 +1,30 @@
+
+<form [formGroup]="productForm" (submit)="addProduct();">
+
+    <div>
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <input matInput formControlName="description">
+      </mat-form-field>
+     </div>
+      <div>
+      <mat-form-field>
+        <mat-label>No. of products in stock</mat-label>
+        <input matInput formControlName="instock" type="number">
+      </mat-form-field>
+      </div>
+      <div>
+        <mat-label>Add Image</mat-label>
+        <input type="file" formControlName="image" id="image" accept="image/png, image/gif, image/jpeg" (change)="setImage($event);">
+        <div class="error-msg" *ngIf="!productForm.value.image" >Upload a image</div>
+      </div>
+      <div>
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+      </div>
+</form>
