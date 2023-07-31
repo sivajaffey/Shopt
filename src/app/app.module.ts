@@ -23,6 +23,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatListModule,
     MatInputModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatTableModule
   ],
   providers: [CommonService],
   bootstrap: [AppComponent],

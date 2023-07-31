@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CommonService } from './services/common.service';
 import { Router, NavigationStart, NavigationEnd, NavigationError} from '@angular/router';
+import { TextsService } from './services/texts.service';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,9 @@ import { Router, NavigationStart, NavigationEnd, NavigationError} from '@angular
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  config = this.common.config;
+  config = this.text.config;
   progressbar:Boolean = false;
-  constructor(private common:CommonService, private router: Router) {
+  constructor(private text:TextsService, private router: Router) {
     this.router.events.subscribe(data=>{
       if (data instanceof NavigationStart) {
           this.progressbar = true;

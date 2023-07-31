@@ -30,7 +30,7 @@ mat-card-header button {
 }
 mat-drawer-container {
     position: fixed !important;
-    height: 88% !important;
+    height: 93% !important;
 }
 .mat-drawer {
     background: #F1EAE0 !important;
@@ -39,6 +39,7 @@ mat-card-content {
     height: 85%;
     padding: 2px;
     background-color: #F1EAE0;
+    overflow: auto;
 }
 app-footer {
     height: 5%;
@@ -57,4 +58,39 @@ app-footer {
 }
 .error-msg {
     color: red;
+}
+.center {
+    text-align: center;
+    justify-items: center;
+}
+.product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.product-view {
+    width: 20%;
+    height: 180px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 25px;
+    background: darkgoldenrod;
+    border: 5px solid white;
+    left: 5px;
+}
+.product-image {
+    width: 100%;
+    height: 30%;
+    background: white;
+}
+.product-selection , ul {
+    text-align: center;
+    list-style-type:none;
+    width: 100%;
+}
+.product-selection , li {
+    float: left;
+}
+.product-add-cart {
+    width: 100%;
 }

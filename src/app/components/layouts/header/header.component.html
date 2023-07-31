@@ -2,7 +2,7 @@
     <button (click)="this.common.drawer(drawer);" class="menu-button" mat-icon-button>
         <mat-icon>menu</mat-icon>
     </button>
-    <h1>{{config?.title}}</h1>
+    <h1 routerLink="/">{{config?.title}}</h1>
     <!-- <button  mat-button class="menu" routerLink="/"><mat-icon>keyboard_backspace</mat-icon></button> -->
     <!-- <button mat-button [matMenuTriggerFor]="menu" class="menu"><mat-icon>menu</mat-icon></button>
         <mat-menu #menu="matMenu">

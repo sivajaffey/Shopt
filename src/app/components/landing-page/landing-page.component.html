@@ -1,16 +1,18 @@
-<!-- <mat-card>
-    <mat-card-header>
-        <h1>ShopT</h1>
-        <button mat-button [matMenuTriggerFor]="menu" class="menu"><mat-icon>menu</mat-icon></button>
-            <mat-menu #menu="matMenu">
-            <button mat-menu-item routerLink="/product">Add Product</button>
-        </mat-menu>
-    </mat-card-header>
-    <mat-card-content>
-        
-    </mat-card-content>
-    <mat-card-footer>
-        Fake Shop Version 1.0.0
-    </mat-card-footer>
-</mat-card> -->
-landing page
+
+<div class="product-list">
+    <div class="product-view" *ngFor="let product of products">
+        <h3 class="product-title">{{product.title}}</h3>
+        <!-- <div class="product-image">image</div> -->
+        <p>{{product.description}}</p>
+        <!-- <div> -->
+            <ul class="product-selection">
+                <li><mat-button>-</mat-button></li>
+                <li><input  disabled [value]="product.instock"/></li>
+                <li><mat-button>+</mat-button></li>
+            </ul>
+        <!-- </div> -->
+        <div class="product-add-cart">
+            <mat-button>Add to cart</mat-button>
+        </div>
+     </div>
+</div>
