@@ -65,7 +65,7 @@ app-footer {
 }
 .product-list {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
 }
 .product-view {
@@ -77,6 +77,7 @@ app-footer {
     background: darkgoldenrod;
     border: 5px solid white;
     left: 5px;
+    justify-items: center;
 }
 .product-image {
     width: 100%;
@@ -87,10 +88,15 @@ app-footer {
     text-align: center;
     list-style-type:none;
     width: 100%;
+    justify-items: center;
 }
 .product-selection , li {
     float: left;
+    display: contents;
 }
 .product-add-cart {
     width: 100%;
+}
+.quantity-input {
+    width: 10px;
 }

@@ -2,15 +2,10 @@
 <div class="product-list">
     <div class="product-view" *ngFor="let product of products">
         <h3 class="product-title">{{product.title}}</h3>
-        <!-- <div class="product-image">image</div> -->
         <p>{{product.description}}</p>
-        <!-- <div> -->
-            <ul class="product-selection">
-                <li><mat-button>-</mat-button></li>
-                <li><input  disabled [value]="product.instock"/></li>
-                <li><mat-button>+</mat-button></li>
-            </ul>
-        <!-- </div> -->
+            <div class="product-selection">
+                <div><mat-button>-</mat-button><input disabled [value]="product.instock" class="quantity-input"/><mat-button>+</mat-button></div>
+            </div>
         <div class="product-add-cart">
             <mat-button>Add to cart</mat-button>
         </div>
